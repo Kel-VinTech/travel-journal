@@ -19,11 +19,12 @@ code {
 
 img{
   max-width: 100%;
+  border-radius: 10px;
 }
 
 h1{
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 h3{
@@ -40,14 +41,13 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
+  background-color: #b92828;
   color: #fff;
   padding: 1.4rem 0;
   margin-bottom: 3rem;
 }
 
 main{
-  max-width: 350px;
   padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -57,6 +57,13 @@ main img{
   margin-bottom: 20px;
 }
 
+.main_content{
+  display: block;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
 .local_stat{
   display: flex;
   align-items: center;
@@ -64,16 +71,28 @@ main img{
   margin-bottom: 5px;
 }
 
+
 .local_stat i{
-  color: brown;
+  color: #b92828;
 }
 
 .local_stat h2{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .local_stat a{
   color: dimgray;
   font-size: 1.05rem;
+}
+
+@media (min-width: 1028px) {
+  main{
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main img{
+    max-width: 300px;
+  }
 }
